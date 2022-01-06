@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<h1> My name is kisan </h1>
+<body>
+    <form name="kisan" onsubmit="return validate()">
+        User name: <input type="text" value="" id="user"> <span id="username"></span><br><br>
+        Password: <input type="password" value="" id="pass"><span id="password"></span><br> <br>
+         <input type="submit" value="submit"> <span id="sub"></span><br><br>
+
+    HOW CAN I HELP YOU INT THIS PROJECT <br>
+    MY NAME IS KISAN BHANDARI <br>
+<script>
+   // alert(" hi how are you");
+var a = Math.random();
+document.write(Date());
+function validate(){
+    var un= document.getElementById("user").value;
+    var pas= document.getElementById("pass").value;
+    var su =document.getElementById("sub").value;
+    if(un==""){
+    document.getElementById("username").innerHTML="**please fill the username";
+    return false;
+    }
+    if(pas==""){
+        document.getElementById("password").innerHTML="**please fill the password";
+        return false;
+    }
+    if("sub=="){
+       // document.write("submission successful, Thank you");
+       //alert("Done");
+       document.getElementById("sub").innerHTML="submission successful";
+        return true;
+    }
+}
+
+</script> 
+</body>
+</html>
